@@ -59,8 +59,6 @@ main {
   margin-left: 0px;
 }
 
-
-
 .contact-links {
   color: #ffffff;
   font-size: 14px;
@@ -77,6 +75,7 @@ main {
   font-size: 14px;
   line-height: 26px;
   list-style-position: outside;
+  list-style-type: none;
   width: 250px;
 }
 .list-secondary-item {
@@ -84,6 +83,7 @@ main {
 }
 .skills-dev {
    margin-left: 20px;
+   list-style: none;
 }
 
 .contact-block {
@@ -203,3 +203,28 @@ main {
 
   margin-right: 10px;
 } */
+/* .square {
+  position: relative;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 4px 0 4px 8px;
+  border-color: transparent transparent transparent  #fb6d3a;
+  display: inline-block;
+} */
+.style-list {
+  width: 8px;
+  height: 8px;
+  background-color:#fb6d3a;
+  display: inline-block;
+  transform: rotate(45deg);
+}
+
+.style-list-inside {
+  width: 5px;
+  height: 5px;
+  background-color: transparent;
+  display: inline-block;
+  transform: rotate(45deg);
+  border: #fb6d3a 1.5px solid;
+}
