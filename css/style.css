@@ -68,6 +68,22 @@ main {
   font-size: 14px;
   line-height: 24px;
   margin-left: 20px;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  gap: 5px;
+}
+.icon-smartphone {
+  width: 16px;
+  height: 18px;
+  fill: currentColor;
+}
+.icon-envelope {
+  width: 18px;
+  height: 16px;
+  fill: currentColor;
+  padding-top: 2px;
+
 }
 
 .bolt {
