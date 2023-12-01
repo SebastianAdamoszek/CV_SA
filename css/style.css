@@ -34,9 +34,9 @@ main {
   margin: 100px 0;
 }
 .list-tertiary li {
-   letter-spacing: 0.8px;
-   font-weight: 500;
- } 
+  letter-spacing: 0.8px;
+  font-weight: 500;
+}
 
 .wrapper {
   display: flex;
@@ -51,7 +51,11 @@ main {
 
 .cv-photo {
   position: relative;
-  margin: 15px 0px 15px 0px;
+  margin: 150px 0px 15px 0px;
+  /* width: 250px;
+  height: 200px; */
+  border-top: solid 3px white;
+  border-bottom: solid 3px white;
 }
 
 .header-secondary {
@@ -82,8 +86,8 @@ main {
   color: #ffffff;
 }
 .skills-dev {
-   margin-left: 20px;
-   list-style: none;
+  margin-left: 20px;
+  list-style: none;
 }
 
 .contact-block {
@@ -92,18 +96,36 @@ main {
   flex-direction: column;
   align-items: start;
   justify-content: center;
-
 }
 
 .all-skills-block {
   margin-top: 50px;
-  
 }
 
 .main-description {
-  width: 462px;
+  position: absolute;
+  width: 1000px;
+  height: auto;
+  color: white;
+  background-color: #2b394d;
+  text-align: center;
+  top: 30px;
+  left: 100px;
+  padding: 15px 0 15px 0;
+}
+.person {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+.name {
+  color: #a8a8a8;
+}
+.last-name {
+  color: #fb6d3a;
+  padding: 20px 0 0 10px;
+}
 .job-title {
   font-weight: 700;
   font-size: 14px;
@@ -114,9 +136,10 @@ main {
   font-weight: 400;
   font-size: 12px;
   line-height: 18px;
-  color: #595959;
+  color: #d8d8d8;
   margin-bottom: 40px;
-  width: 300px;
+  /* width: 300px; */
+  text-align: center;
 }
 
 .projects {
@@ -128,20 +151,29 @@ main {
   font-weight: 700;
   line-height: 24px;
   color: #000000;
-  list-style-position: inside;
+  list-style: none;
 }
 
 .list-primary-item {
+  width: 70px;
+  height: 30px;
+  border: #595959 2px solid;
+  border-radius: 10px;
   font-weight: 400;
   font-size: 14px;
+  letter-spacing: 1.5px;
+  padding-top: 10px;
   color: #595959;
+  background-color: #fb6d3a;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
 }
 
 .header-primary {
   font-weight: 700;
   font-size: 22px;
   padding: 15px 0 15px 25px;
-
 }
 
 .job-name {
@@ -215,7 +247,7 @@ main {
 .style-list {
   width: 8px;
   height: 8px;
-  background-color:#fb6d3a;
+  background-color: #fb6d3a;
   display: inline-block;
   transform: rotate(45deg);
 }
