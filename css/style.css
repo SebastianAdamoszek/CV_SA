@@ -124,15 +124,15 @@ main {
   height: auto;
   color: white;
   background-color: #2b394d;
-  text-align: center;
   top: 30px;
   left: 100px;
   padding: 15px 0 15px 0;
 }
 .person {
   display: flex;
-  justify-content: center;
+  justify-content: end;
   align-items: center;
+  padding-right: 90px;
 }
 
 .name {
@@ -146,6 +146,7 @@ main {
   font-weight: 700;
   font-size: 14px;
   line-height: 17px;
+  padding-left: 300px;
 }
 
 .description {
@@ -153,9 +154,8 @@ main {
   font-size: 12px;
   line-height: 18px;
   color: #d8d8d8;
-  margin-bottom: 40px;
-  /* width: 300px; */
-  text-align: center;
+  padding: 5px 60px 25px 0;
+  text-align: right;
 }
 
 .projects {
