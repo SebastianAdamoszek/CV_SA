@@ -4,6 +4,8 @@
   text-decoration: none;
 }
 
+
+
 body {
   font-family: "Montserrat", sans-serif;
   background: #b4b4b4;
@@ -60,7 +62,7 @@ main {
 
 .header-secondary {
   color: #ffffff;
-  margin-left: 0px;
+  padding-bottom: 10px;
 }
 
 .contact-links {
@@ -94,8 +96,7 @@ main {
   color: #fb6d3a;
   font-size: 14px;
   line-height: 26px;
-  list-style-position: outside;
-  list-style-type: none;
+  list-style: none;
   width: 250px;
 }
 .list-secondary-item {
@@ -104,6 +105,20 @@ main {
 .skills-dev {
   margin-left: 20px;
   list-style: none;
+}
+.skills-dev li {
+  transition: 0.2s ease-in-out;
+  cursor: text;
+}
+
+.skills-dev li:hover {
+  transform: scale(1.05);
+}
+.skill-dev-item {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
 }
 
 .contact-block {
@@ -266,6 +281,7 @@ main {
   background-color: #fb6d3a;
   display: inline-block;
   transform: rotate(45deg);
+  margin-right: 5px;
 }
 
 .style-list-inside {
