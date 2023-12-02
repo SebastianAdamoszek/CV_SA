@@ -108,17 +108,21 @@ main {
   border-bottom: 5px solid #2b394d;
   border-right: 3px solid #2b394d;
   cursor: pointer;
+  color: #2b394d;
+
 }
-.section__projects-list li:active ~ .link {
-  border-bottom: 3px solid #2b394d;
+.section__projects-list li:active {
+  border-bottom:3px solid #2b394d;
   border-right: 1px solid #2b394d;
   transform: translateY(3px);
+  width: 72px;
+  height: 42px;
+  color:#d8d8d8;
 }
 .section__projects-list__link-text {
   text-align: center;
   font-weight: 700;
   text-transform: uppercase;
-  color: #2b394d;
   padding-top: 10px;
   letter-spacing: 1.3px;
 }
