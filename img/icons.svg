@@ -95,5 +95,6 @@
                   stroke-linejoin="miter" style="fill: var(--color2, #fff); stroke: var(--color2, #fff)"
                   d="M8.442 16.537l-0.147-0.14-2.205 2.088 7.767 7.41 16.318-15.567-2.19-2.089-14.128 13.465-5.416-5.167z"></path>
         </symbol>
+        
     </defs>
 </svg>

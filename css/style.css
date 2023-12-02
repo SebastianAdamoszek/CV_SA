@@ -7,7 +7,10 @@
 body {
   font-family: "Montserrat", sans-serif;
   background: #b4b4b4;
+  cursor: url(../img/cursor.svg), auto;
   margin: 20px auto;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+
 }
 .loading-gentle {
   animation: fadeIn 1s ease-in-out forwards;
@@ -16,10 +19,12 @@ body {
 @keyframes fadeIn {
   0% {
     opacity: 0;
-    transform: scale(0.5);
+    transform: scale(.3) rotate(-360deg);
   }
   100% {
     opacity: 1;
+    transform: scale(1) rotate(0deg);
+
   }
 }
 
@@ -119,26 +124,32 @@ main {
   gap: 15px;
 }
 .section__projects-list li{
-  width: 70px;
+  width: 80px;
   height: 40px;
-  background-color: #fb6d3a;
+  background-color: rgba(250, 112, 61, 1);
   border-radius: 10px;
   border-bottom: 5px solid #2b394d;
   border-right: 3px solid #2b394d;
   cursor: pointer;
   color: #2b394d;
+  transition: 0.25s ease-in-out ;
+ }
+ .section__projects-list li:hover {
+   background-color: rgba(250, 112, 61, 0.9);
+   transform: scale(1.02);
+   color: #e2e2e2;
  }
 .section__projects-list li:active {
   border-bottom:1px solid #2b394d;
   border-right: 1px solid #2b394d;
-  transform: translateY(2px);
-  width: 72px;
+  transform: translate(1px, 2px);
+  width: 82px;
   height: 42px;
   color:#d8d8d8;
 
 }
 .section__projects-list__link-text {
-   text-align: center;
+  text-align: center;
   font-weight: 700;
   text-transform: uppercase;
   padding-top: 10px;
