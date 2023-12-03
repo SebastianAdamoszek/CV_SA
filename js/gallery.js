@@ -7,8 +7,7 @@
     // "../img/gallery/006.jpg",
 
 const images = [
-    "https://www.facebook.com/photo/?fbid=2072481196427725&set=a.2072481236427721",
-  
+    "https://github.com/SebastianAdamoszek/CV/blob/main/img/gallery/001.jpg?raw=true"
   
 
   ];
