@@ -8,6 +8,7 @@
     <title>CV</title>
     <link href="./css/style.css" rel="stylesheet" />
     <link href="./css/animation.css" rel="stylesheet" />
+    <link href="./css/gallery.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,14 +16,16 @@
       rel="stylesheet"
     />
   </head>
-  <body class="start-animation">
+  <body class="start-animation gradient-animation">
     <div class="wrapper">
       <header>
         <div class="header__box">
           <h2 class="header__title">Frontend Developer</h2>
           <h1 class="header__person header__person-animation">
-            <span class="header__person__first-name">Sebastian</span
-            ><span class="header__person__last-name">Adamoszek</span>
+            <span class="header__person__first-name"
+              ><span class="letter-animation">S</span>ebastian</span
+            >
+            <span class="header__person__last-name">Adamoszek</span>
           </h1>
           <p class="header__sub-title">
             "Każda praca jest możliwa do wykonania jeśli podzielisz ją na małe
@@ -35,68 +38,77 @@
           <h2 class="section__title">Moje repozytoria</h2>
           <ul class="section__projects-list">
             <div class="section__project-sort">
-                <li onclick="window.open
+              <li
+                onclick="window.open
             ('https://github.com/SebastianAdamoszek/CV','_blank')"
-            >
+              >
                 <p class="section__projects-list__link-text">cv</p>
-            </li>
-            <li onclick="window.open
+              </li>
+              <li
+                onclick="window.open
             ('https://github.com/SebastianAdamoszek/goit-markup-hw-08','_blank')"
-            >
+              >
                 <p class="section__projects-list__link-text">html</p>
-            </li>
-            <li onclick="window.open
+              </li>
+              <li
+                onclick="window.open
             ('https://github.com/SebastianAdamoszek/projekt_grupa_02','_blank')"
-            >
+              >
                 <p class="section__projects-list__link-text">html</p>
-            </li>
+              </li>
             </div>
             <div class="section__project-sort">
-            <li onclick="window.open
+              <li
+                onclick="window.open
             ('https://github.com/SebastianAdamoszek/goit-js-hw-09','_blank')"
-            >
+              >
                 <p class="section__projects-list__link-text">js</p>
-            </li>
-             <li onclick="window.open
+              </li>
+              <li
+                onclick="window.open
             ('https://github.com/SebastianAdamoszek/goit-js-hw-10','_blank')"
-            >
+              >
                 <p class="section__projects-list__link-text">js</p>
-            </li>
-              <li onclick="window.open
+              </li>
+              <li
+                onclick="window.open
             ('https://github.com/SebastianAdamoszek/goit-js-hw-11','_blank')"
-            >
+              >
                 <p class="section__projects-list__link-text">js</p>
-            </li>
-              <li onclick="window.open
+              </li>
+              <li
+                onclick="window.open
             ('https://github.com/SebastianAdamoszek/project-js','_blank')"
-            >
+              >
                 <p class="section__projects-list__link-text">js</p>
-            </li>
+              </li>
             </div>
             <div class="section__project-sort">
-              <li onclick="window.open
+              <li
+                onclick="window.open
             ('https://github.com/SebastianAdamoszek/goit-react-hw-01-components','_blank')"
-            >
+              >
                 <p class="section__projects-list__link-text">react</p>
-            </li>
-             <li onclick="window.open
+              </li>
+              <li
+                onclick="window.open
             ('https://github.com/SebastianAdamoszek/goit-react-hw-02-feedback','_blank')"
-            >
+              >
                 <p class="section__projects-list__link-text">react</p>
-            </li>
-             <li onclick="window.open
+              </li>
+              <li
+                onclick="window.open
             ('https://github.com/SebastianAdamoszek/goit-react-hw-03-phonebook','_blank')"
-            >
+              >
                 <p class="section__projects-list__link-text">react</p>
-            </li>
-           
-            <li onclick="window.open
+              </li>
+
+              <li
+                onclick="window.open
             ('https://github.com/SebastianAdamoszek/goit-react-hw-03-image-finder','_blank')"
-            >
-            
+              >
                 <p class="section__projects-list__link-text">react</p>
-              
-            </li>
+              </li>
             </div>
           </ul>
         </section>
@@ -176,18 +188,22 @@
               >
             </p>
             <li>Kurs 10 mieisęczny Fullstack Developer GO-IT Polska</li>
-            <li>REACT</li>
+            <li>Szkolenie komputerowe ICT - REACT 120h</li>
+            <li>
+              <img
+                class=""
+                width="80"
+                src="./img/favi.png"
+                alt="Miniatura Zdjęcia"
+                data-modal-open
+                onclick="openModal()"
+              />
+            </li>
           </ul>
         </section>
-    
       </main>
       <aside>
-        <img
-          class="cv-photo"
-          src="img/person.jpg"
-          width="370"
-          alt="Zdjecie zegarmistrza"
-        />
+        <img class="cv-photo" src="img/person.jpg" width="370" alt="Seba" />
 
         <section class="aside__box">
           <div>
@@ -321,5 +337,17 @@
         </section>
       </aside>
     </div>
+    <div class="backdrop" data-modal-backdrop>
+      <div class="modal" data-modal>
+        <div class="modal__img">
+          <img id="image" width="400" height="600"/>
+        </div>
+        <div class="gallery-btn__box">
+          <button id="prevButton" class="gallery-btn">Prev</button>
+          <button id="nextButton" class="gallery-btn">Next</button>
+        </div>
+      </div>
+    </div>
+    <script src="./js/gallery.js"></script>
   </body>
 </html>
