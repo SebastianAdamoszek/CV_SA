@@ -189,12 +189,13 @@
             </p>
             <li>Kurs 10 mieisęczny Fullstack Developer GO-IT Polska</li>
             <li>Szkolenie komputerowe ICT - REACT 120h</li>
-           
           </ul>
         </section>
       </main>
       <aside>
-        <img class="cv-photo" src="img/person.jpg" width="370" alt="Seba" />
+        <div class="cv-photo__box">
+          <img class="cv-photo" src="./img/Seba.jpg" width="200" alt="Seba" />
+        </div>
 
         <section class="aside__box">
           <div>
@@ -323,16 +324,32 @@
 
                 <span class="aside__list-item">dbałość o dobrą atmosferę</span>
               </li>
+            </ul>
+
+            <ul class="aside__gallery-box">
               <li>
-                <img
-                  class=""
-                  width="80"
-                  src="./img/favi.png"
-                  alt="certyfikat"
-                  data-modal-open
-                  onclick="openModal()"
-                />
+                <p class="aside__gallery__list-style"></p>
+                <p class="aside__gallery__list-style"></p>
+                <p class="aside__gallery__list-style"></p>
               </li>
+              <img
+                class="aside__gallery-miniature"
+                width="80"
+                src="./img/gallery/001.jpg"
+                alt="certyfikat"
+                data-modal-open
+                onclick="openModal()"
+              />
+
+              <li>
+                <p class="aside__gallery__list-style"></p>
+                <p class="aside__gallery__list-style"></p>
+                <p class="aside__gallery__list-style"></p>
+              </li>
+              <span class="aside__gallery-text"
+                     onclick="openModal()"
+                     >Kliknij
+                </span>
             </ul>
           </div>
         </section>
@@ -341,7 +358,7 @@
     <div class="backdrop" data-modal-backdrop>
       <div class="modal" data-modal>
         <div class="modal__img">
-          <img id="image" width="400" height="600"/>
+          <img id="image" width="400" height="600" />
         </div>
         <div class="gallery-btn__box">
           <button id="prevButton" class="gallery-btn">Prev</button>
