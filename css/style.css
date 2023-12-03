@@ -294,6 +294,7 @@ aside {
 .aside__gallery-miniature {
   cursor: pointer;
 }
+
 .aside__gallery__list-style {
   width: 8px;
   height: 8px;
@@ -309,4 +310,10 @@ aside {
   color: #fb6d3a;
   letter-spacing: 3px;
   cursor: pointer;
+  transition: 0.2s ease-in-out;
+  border: 2px solid transparent;
+}
+.aside__gallery-miniature:hover ~  .aside__gallery-text ,
+.aside__gallery-text:hover {
+  border: 2px solid #fb6d3a;
 }

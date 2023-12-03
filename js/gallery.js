@@ -1,10 +1,14 @@
 const images = [
-    "../img/gallery/001.jpg",
-    "../img/gallery/002.jpg",
-    "../img/gallery/003.jpg",
-    "../img/gallery/004.jpg",
-    "../img/gallery/005.jpg",
-    "../img/gallery/006.jpg",
+    "url(https://www.facebook.com/photo/?fbid=2072481196427725&set=a.2072481236427721)",
+  
+  
+    // link lotal repozytory  
+    // "../img/gallery/001.jpg",
+    // "../img/gallery/002.jpg",
+    // "../img/gallery/003.jpg",
+    // "../img/gallery/004.jpg",
+    // "../img/gallery/005.jpg",
+    // "../img/gallery/006.jpg",
 
   ];
   let currentIndex = 0;
