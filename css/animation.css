@@ -1,9 +1,4 @@
 .start-animation {
-  background: linear-gradient(
-    30deg,
-    rgba(0, 151, 56, 0.8),
-    rgba(23, 0, 153, 0.8)
-  );
   animation: start 1s ease-in-out forwards;
 }
 
@@ -20,6 +15,27 @@
 .header__person-animation {
   animation: move 60s infinite;
 }
+.gradient-animation {
+  background: linear-gradient(
+    30deg,
+    rgba(0, 151, 56, 0.8),
+    rgba(23, 0, 153, 0.8)
+  );
+  animation: bodyBackground 30s infinite;
+}
+
+@keyframes bodyBackground {
+  25% {
+    background: linear-gradient(to right, #ff8a00, #e52e71); 
+  }
+  50% {
+    background: linear-gradient(to right, #1e90ff, #00ced1); 
+  }
+  75% {
+    background: linear-gradient(to right, #ff8a00, #e52e71);
+  }
+}
+
 @keyframes move {
   0%,
   4% {
