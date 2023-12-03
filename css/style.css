@@ -6,14 +6,9 @@
 
 body {
   font-family: "Montserrat", sans-serif;
-  background: linear-gradient(
-    30deg,
-    rgba(0, 151, 56, 0.8),
-    rgba(23, 0, 153, 0.8)
-  );  cursor: url(../img/cursor.svg), auto;
+  cursor: url(../img/cursor.svg), auto;
   margin: 20px auto;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-
 }
 
 aside {
@@ -72,7 +67,6 @@ main {
   color: #a8a8a8;
 }
 
-
 .header__person__last-name {
   color: #fb6d3a;
   padding: 20px 0 0 10px;
@@ -91,7 +85,6 @@ main {
   justify-content: center;
   align-items: start;
   margin: 25px 0 25px 80px;
- 
 }
 
 .section__title {
@@ -115,7 +108,7 @@ main {
   display: flex;
   gap: 15px;
 }
-.section__projects-list li{
+.section__projects-list li {
   width: 80px;
   height: 40px;
   background-color: rgba(250, 112, 61, 1);
@@ -124,21 +117,20 @@ main {
   border-right: 3px solid #2b394d;
   cursor: pointer;
   color: #2b394d;
-  transition: 0.25s ease-in-out ;
- }
- .section__projects-list li:hover {
-   background-color: rgba(250, 112, 61, 0.9);
-   transform: scale(1.02);
-   color: #e2e2e2;
- }
+  transition: 0.25s ease-in-out;
+}
+.section__projects-list li:hover {
+  background-color: rgba(250, 112, 61, 0.9);
+  transform: scale(1.02);
+  color: #e2e2e2;
+}
 .section__projects-list li:active {
-  border-bottom:1px solid #2b394d;
+  border-bottom: 1px solid #2b394d;
   border-right: 1px solid #2b394d;
   transform: translate(1px, 2px);
   width: 82px;
   height: 42px;
-  color:#d8d8d8;
-
+  color: #d8d8d8;
 }
 .section__projects-list__link-text {
   text-align: center;
@@ -146,7 +138,6 @@ main {
   text-transform: uppercase;
   padding-top: 10px;
   letter-spacing: 1.3px;
- 
 }
 .section__list li {
   list-style: inside;
@@ -220,7 +211,6 @@ main {
 }
 .aside__contact:hover {
   color: #fb6d3a;
-
 }
 .aside__icon-smartphone {
   width: 16px;
