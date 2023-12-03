@@ -60,7 +60,4 @@ const images = [
     currentIndex = (currentIndex + 1) % images.length;
     showCurrentImage();
   }
-  
-  // Event listener for opening the modal
-  document.getElementById("openButton").addEventListener("click", openModal);
-  
+ 
