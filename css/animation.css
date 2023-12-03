@@ -1,0 +1,66 @@
+.start-animation {
+    animation: fadeIn 1s ease-in-out forwards;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: scale(.3) rotate(-360deg);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1) rotate(0deg);
+  
+    }
+  }
+.header__person-animation {
+    animation: heartBeat 15s infinite;
+  }
+  @keyframes heartBeat {
+    0% {
+      transform: scale(1);
+    }
+    1% {
+      transform: scale(1.05);
+    }
+     5% {
+      transform: scale(1);
+    }
+    25% {
+      transform: scale(1) rotate(0);
+    }
+    27% {
+      transform: scaleX(0.5) rotate(0);
+    }
+    30% {
+      transform: scale(1) rotate(0);
+    }
+    48% {
+      transform: scale(1) rotate(0);
+  
+    }
+    50% {
+      transform: scale(1) rotate(-1deg);
+  
+    }
+    51% {
+      transform: scale(1) rotate(1deg);
+  
+    }
+    53% {
+      transform: scale(1) rotate(0);
+  
+    }
+    78% {
+      transform: scale(1) translateX(0px);
+  
+    }
+    80% {
+      transform: scale(1) translateX(-30px);
+  
+    }
+    82% {
+      transform: scale(1) translateX(0px);
+  
+    }
+  }
