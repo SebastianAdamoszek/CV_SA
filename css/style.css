@@ -118,9 +118,9 @@ main {
 .section__projects-list li:active {
   border-bottom: 1px solid #2b394d;
   border-right: 1px solid #2b394d;
-  transform: translate(1px, 2px);
+  transform: translate(3px, 3px);
   width: 82px;
-  height: 42px;
+  height: 40px;
   color: #d8d8d8;
 }
 .section__projects-list__link-text {
