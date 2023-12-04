@@ -1,35 +1,60 @@
 .start-animation {
-  animation: combinedAnimation 30s infinite;
+  background: linear-gradient(
+    30deg,
+    rgba(0, 151, 56, 0.8),
+    rgba(23, 0, 153, 0.8)
+  );
+  animation: start 1s ease-in-out forwards;
+  /* animation: bodyBackground 30s infinite; */
 }
 
-@keyframes combinedAnimation {
+@keyframes start {
   0% {
     opacity: 0;
     transform: scale(0.3) rotate(-720deg);
-    background: linear-gradient(
-      30deg,
-      rgba(0, 151, 56, 0.8),
-      rgba(23, 0, 153, 0.8)
-    );
   }
-  5% {
+  100% {
     opacity: 1;
     transform: scale(1) rotate(0deg);
   }
   25% {
-    background: linear-gradient(to right, #ff8a00, #e52e71);
+    background: linear-gradient(to right, #ff8a00, #e52e71); 
   }
   50% {
-    background: linear-gradient(to right, #1e90ff, #00ced1);
+    background: linear-gradient(to right, #1e90ff, #00ced1); 
   }
   75% {
     background: linear-gradient(to right, #ff8a00, #e52e71);
   }
 }
+@keyframes bodyBackground {
+ 
+}
+
 
 .header__person-animation {
   animation: move 60s infinite;
 }
+/* .gradient-animation {
+  background: linear-gradient(
+    30deg,
+    rgba(0, 151, 56, 0.8),
+    rgba(23, 0, 153, 0.8)
+  );
+  animation: bodyBackground 30s infinite;
+}
+
+@keyframes bodyBackground {
+  25% {
+    background: linear-gradient(to right, #ff8a00, #e52e71); 
+  }
+  50% {
+    background: linear-gradient(to right, #1e90ff, #00ced1); 
+  }
+  75% {
+    background: linear-gradient(to right, #ff8a00, #e52e71);
+  }
+} */
 
 @keyframes move {
   0%,
