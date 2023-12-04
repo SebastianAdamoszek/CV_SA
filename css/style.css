@@ -305,15 +305,20 @@ aside {
 }
 .aside__gallery-text {
   position: relative;
-  bottom: 80px;
+  bottom: 185px;
+  right:50px ;
   font-weight: 900;
   color: #fb6d3a;
-  letter-spacing: 3px;
+  letter-spacing: 0;
   cursor: pointer;
   transition: 0.2s ease-in-out;
   border: 2px solid transparent;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  transform: translateX(10px);
 }
 .aside__gallery-miniature:hover ~  .aside__gallery-text ,
 .aside__gallery-text:hover {
   border: 2px solid #fb6d3a;
+
 }
