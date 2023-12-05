@@ -1,3 +1,6 @@
+
+
+const images = [
 // link local repozytory
 // "../img/gallery/001.jpg",
 // "../img/gallery/002.jpg",
@@ -6,7 +9,6 @@
 // "../img/gallery/005.jpg",
 // "../img/gallery/006.jpg",
 
-const images = [
   "https://github.com/SebastianAdamoszek/CV/blob/main/img/gallery/001.jpg?raw=true",
   "https://github.com/SebastianAdamoszek/CV/blob/main/img/gallery/002.jpg?raw=true",
   "https://github.com/SebastianAdamoszek/CV/blob/main/img/gallery/003.jpg?raw=true",
