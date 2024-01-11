@@ -4,15 +4,15 @@
     rgba(0, 151, 56, 0.8),
     rgba(23, 0, 153, 0.8)
   );
-  animation: combinedAnimation 60s ease-in-out;
+  animation: startAnimation 120s ease-in-out;
 }
 
-@keyframes combinedAnimation {
+@keyframes startAnimation {
   0% {
     opacity: 0;
     transform: scale(0.3) rotate(-720deg);
   }
-  3% {
+  1.5% {
     opacity: 1;
     transform: scale(1) rotate(0deg);
   }
