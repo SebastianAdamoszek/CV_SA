@@ -14,6 +14,7 @@ const images = [
   "https://github.com/SebastianAdamoszek/CV/blob/main/img/gallery/005.jpg?raw=true",
   "https://github.com/SebastianAdamoszek/CV/blob/main/img/gallery/006.jpg?raw=true",
 ];
+
 let currentIndex = 0;
 
 const backdrop = document.querySelector(".backdrop");

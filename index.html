@@ -15,17 +15,18 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link href="./lightbox2-2.11.4/dist/css/lightbox.min.css" rel="stylesheet" />
   </head>
   <body class="start-animation">
     <div class="wrapper">
-      <header>
+      <header class="header">
         <div class="header__box">
           <h2 class="header__title">Frontend Developer</h2>
           <h1 class="header__person header__person-animation">
-            <span class="header__person__first-name"
-              ><span class="letter-animation">S</span>ebastian</span
+            <span class="header__person-first-name"
+              ><span class="header__letter-animation">S</span>ebastian</span
             >
-            <span class="header__person__last-name">Adamoszek</span>
+            <span class="header__person-last-name">Adamoszek</span>
           </h1>
           <p class="header__sub-title">
             "Każda praca jest możliwa do wykonania jeśli podzielisz ją na małe
@@ -42,19 +43,19 @@
                 onclick="window.open
             ('https://github.com/SebastianAdamoszek/CV','_blank')"
               >
-                <p class="section__projects-list__link-text">cv</p>
+                <p class="section__projects-list--text">cv</p>
               </li>
               <li
                 onclick="window.open
             ('https://github.com/SebastianAdamoszek/goit-markup-hw-08','_blank')"
               >
-                <p class="section__projects-list__link-text">html</p>
+                <p class="section__projects-list--text">html</p>
               </li>
               <li
                 onclick="window.open
             ('https://github.com/SebastianAdamoszek/projekt_grupa_02','_blank')"
               >
-                <p class="section__projects-list__link-text">html</p>
+                <p class="section__projects-list--text">html</p>
               </li>
             </div>
             <div class="section__project-sort">
@@ -62,25 +63,25 @@
                 onclick="window.open
             ('https://github.com/SebastianAdamoszek/goit-js-hw-09','_blank')"
               >
-                <p class="section__projects-list__link-text">js</p>
+                <p class="section__projects-list--text">js</p>
               </li>
               <li
                 onclick="window.open
             ('https://github.com/SebastianAdamoszek/goit-js-hw-10','_blank')"
               >
-                <p class="section__projects-list__link-text">js</p>
+                <p class="section__projects-list--text">js</p>
               </li>
               <li
                 onclick="window.open
             ('https://github.com/SebastianAdamoszek/goit-js-hw-11','_blank')"
               >
-                <p class="section__projects-list__link-text">js</p>
+                <p class="section__projects-list--text">js</p>
               </li>
               <li
                 onclick="window.open
             ('https://github.com/SebastianAdamoszek/project-js','_blank')"
               >
-                <p class="section__projects-list__link-text">js</p>
+                <p class="section__projects-list--text">js</p>
               </li>
             </div>
             <div class="section__project-sort">
@@ -88,31 +89,31 @@
                 onclick="window.open
             ('https://github.com/SebastianAdamoszek/goit-react-hw-01-components','_blank')"
               >
-                <p class="section__projects-list__link-text">react</p>
+                <p class="section__projects-list--text">react</p>
               </li>
               <li
                 onclick="window.open
             ('https://github.com/SebastianAdamoszek/goit-react-hw-02-feedback','_blank')"
               >
-                <p class="section__projects-list__link-text">react</p>
+                <p class="section__projects-list--text">react</p>
               </li>
               <li
                 onclick="window.open
             ('https://github.com/SebastianAdamoszek/goit-react-hw-03-phonebook','_blank')"
               >
-                <p class="section__projects-list__link-text">react</p>
+                <p class="section__projects-list--text">react</p>
               </li>
 
               <li
                 onclick="window.open
             ('https://github.com/SebastianAdamoszek/goit-react-hw-03-image-finder','_blank')"
               >
-                <p class="section__projects-list__link-text">react</p>
+                <p class="section__projects-list--text">react</p>
               </li>
             </div>
           </ul>
         </section>
-        
+
         <section class="section__box">
           <h2 class="section__title">Kariera zawodowa</h2>
           <h3 class="section__sub-title">
@@ -126,7 +127,7 @@
             </li>
           </ul>
         </section>
-      
+
         <section class="section__box">
           <h3 class="section__sub-title">
             Kierownik serwisu
@@ -165,7 +166,7 @@
             </li>
           </ul>
         </section>
-      
+
         <section class="section__box">
           <h2 class="section__title">Edukacja - wykształcenie średnie</h2>
           <ul class="section__list">
@@ -348,9 +349,9 @@
 
             <ul class="aside__gallery-box">
               <li>
-                <p class="aside__gallery__list-style"></p>
-                <p class="aside__gallery__list-style"></p>
-                <p class="aside__gallery__list-style"></p>
+                <p class="aside__gallery-list--style"></p>
+                <p class="aside__gallery-list--style"></p>
+                <p class="aside__gallery-list--style"></p>
               </li>
               <img
                 class="aside__gallery-miniature"
@@ -362,9 +363,9 @@
               />
 
               <li>
-                <p class="aside__gallery__list-style"></p>
-                <p class="aside__gallery__list-style"></p>
-                <p class="aside__gallery__list-style"></p>
+                <p class="aside__gallery-list--style"></p>
+                <p class="aside__gallery-list--style"></p>
+                <p class="aside__gallery-list--style"></p>
               </li>
               <span class="aside__gallery-text"
                      onclick="openModal()"
@@ -387,5 +388,6 @@
       </div>
     </div>
     <script src="./js/gallery.js"></script>
+    <script src="./lightbox2-2.11.4/dist/js/lightbox.js"></script>
   </body>
 </html>

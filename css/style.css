@@ -27,48 +27,49 @@ main {
   background: #e2e2e2;
   box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
 }
+.header {
+  .header__box {
+    position: absolute;
+    width: 1000px;
+    height: auto;
+    background-color: #2b394d;
+    top: 30px;
+    left: 100px;
+    padding: 15px 0 15px 0;
+  }
+  .header__title {
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 1.3px;
+    padding-left: 300px;
+    color: white;
+  }
+  .header__person {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-right: 90px;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 55px;
+  }
 
-.header__box {
-  position: absolute;
-  width: 1000px;
-  height: auto;
-  background-color: #2b394d;
-  top: 30px;
-  left: 100px;
-  padding: 15px 0 15px 0;
-}
-.header__title {
-  font-weight: 700;
-  font-size: 16px;
-  letter-spacing: 1.3px;
-  padding-left: 300px;
-  color: white;
-}
-.header__person {
-  display: flex;
-  justify-content: end;
-  align-items: center;
-  padding-right: 90px;
-  font-weight: 700;
-  font-size: 45px;
-  line-height: 55px;
-}
+  .header__person-first-name {
+    color: #a8a8a8;
+  }
 
-.header__person__first-name {
-  color: #a8a8a8;
-}
-
-.header__person__last-name {
-  color: #fb6d3a;
-  padding: 20px 0 0 10px;
-}
-.header__sub-title {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 18px;
-  color: #d8d8d8;
-  padding: 5px 60px 25px 0;
-  text-align: right;
+  .header__person-last-name {
+    color: #fb6d3a;
+    padding: 20px 0 0 10px;
+  }
+  .header__sub-title {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #d8d8d8;
+    padding: 5px 60px 25px 0;
+    text-align: right;
+  }
 }
 .section__box {
   display: flex;
@@ -123,7 +124,7 @@ main {
   height: 40px;
   color: #d8d8d8;
 }
-.section__projects-list__link-text {
+.section__projects-list--text {
   text-align: center;
   font-weight: 700;
   text-transform: uppercase;
@@ -174,6 +175,7 @@ main {
   color: #a8a8a8;
   padding: 5px 5px 10px 0;
 }
+
 /* aside */
 aside {
   width: 370px;
@@ -295,7 +297,7 @@ aside {
   cursor: pointer;
 }
 
-.aside__gallery__list-style {
+.aside__gallery-list--style {
   width: 8px;
   height: 8px;
   background-color: #fb6d3a;
@@ -306,7 +308,7 @@ aside {
 .aside__gallery-text {
   position: relative;
   bottom: 185px;
-  right:50px ;
+  right: 50px;
   font-weight: 900;
   color: #fb6d3a;
   letter-spacing: 0;
@@ -317,8 +319,7 @@ aside {
   text-orientation: upright;
   transform: translateX(10px);
 }
-.aside__gallery-miniature:hover ~  .aside__gallery-text ,
+.aside__gallery-miniature:hover ~ .aside__gallery-text,
 .aside__gallery-text:hover {
   border: 2px solid #fb6d3a;
-
 }
