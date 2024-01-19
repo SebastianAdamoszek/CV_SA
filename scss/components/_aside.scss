@@ -6,13 +6,13 @@
     align-items: center;
     justify-content: start;
 
-    .cv-photo__box {
+    .cv-photo {
       position: relative;
       margin: 150px 0px 15px 0px;
       padding: 10px;
       border: 10px solid #ffffff;
 
-      & {
+      &__img {
         position: relative;
         border: solid 3px #fb6d3a;
       }
