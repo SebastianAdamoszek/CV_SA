@@ -91,3 +91,12 @@
     transform: rotateX(180deg);
   }
 }
+
+.gallery__img-animation {
+  animation: photoGallery 1s ease-in-out;
+}
+  @keyframes photoGallery {
+    0%{
+      transform: scaleX(.1);
+    }
+}

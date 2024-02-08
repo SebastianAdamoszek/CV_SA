@@ -1,13 +1,11 @@
-
-
 const images = [
-// link local repozytory
-// "../img/gallery/001.jpg",
-// "../img/gallery/002.jpg",
-// "../img/gallery/003.jpg",
-// "../img/gallery/004.jpg",
-// "../img/gallery/005.jpg",
-// "../img/gallery/006.jpg",
+  // link local repozytory
+  // "../img/gallery/001.jpg",
+  // "../img/gallery/002.jpg",
+  // "../img/gallery/003.jpg",
+  // "../img/gallery/004.jpg",
+  // "../img/gallery/005.jpg",
+  // "../img/gallery/006.jpg",
 
   "https://github.com/SebastianAdamoszek/CV/blob/main/img/gallery/001.jpg?raw=true",
   "https://github.com/SebastianAdamoszek/CV/blob/main/img/gallery/002.jpg?raw=true",
@@ -61,12 +59,32 @@ function showCurrentImage() {
   imageElement.src = images[currentIndex];
 }
 
-function prevImage() {
-  currentIndex = (currentIndex - 1 + images.length) % images.length;
-  showCurrentImage();
+function animateImage() {
+  const imgAnimation = document.getElementById("image");
+
+  imgAnimation.style.transition = "transform .5s ease-in-out";
+  imgAnimation.style.transform = "scaleX(0.1)";
+
+  setTimeout(() => {
+    imgAnimation.style.transition = "transform .5s ease-in-out";
+    imgAnimation.style.transform = "scaleX(1)";
+  }, 500);
 }
 
 function nextImage() {
   currentIndex = (currentIndex + 1) % images.length;
-  showCurrentImage();
+  animateImage();
+  setTimeout(() => {
+    showCurrentImage();
+  }, 500);
 }
+
+function prevImage() {
+  currentIndex = (currentIndex - 1) % images.length;
+  animateImage();
+  setTimeout(() => {
+    showCurrentImage();
+  }, 500);
+}
+
+document.getElementById("nextButton").addEventListener("click", nextImage);
