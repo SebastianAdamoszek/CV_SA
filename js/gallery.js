@@ -86,5 +86,3 @@ function prevImage() {
     showCurrentImage();
   }, 500);
 }
-
-document.getElementById("nextButton").addEventListener("click", nextImage);
