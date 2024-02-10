@@ -10,9 +10,15 @@
   display: none;
   position: fixed;
   inset: 0;
-  width: 1000%;
-  height: 100%;
+  width: 400vw;
+  height: 400vh;
   background-color: rgba(0, 0, 0, 0.6);
+
+  @include large {
+    inset: 0;
+  margin-left: -1960px;
+
+  }
 }
 
 .modal {
@@ -29,12 +35,12 @@
   width: 700px;
   height: 700px;
 
-  @media screen and (min-width: 768px) {
+  @include medium {
     top: 30%;
     left: 40%;
   }
 
-  @media screen and (min-width: 1200px) {
+  @include large {
    top: 50%;
    left: 50%;
    transform: translate(-50%, -50%);

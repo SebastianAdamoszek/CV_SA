@@ -14,14 +14,14 @@ body {
   transform-origin: left top;
 
 
-  @media screen and (min-width: 480px) {
+  @include small {
     transform: scale(0.43);
   }
-  @media screen and (min-width: 768px) {
+  @include medium {
     transform: scale(0.7);
     margin: 20px auto;
   }
-  @media screen and (min-width: 1200px) {
+  @include large {
       width: 1200px;
       margin: 20px auto;
       transform: scale(1);
