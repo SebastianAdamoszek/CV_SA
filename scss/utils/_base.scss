@@ -9,29 +9,24 @@ body {
   font-family: "Montserrat", sans-serif;
   cursor: url(../img/cursor.svg), auto;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-
-  max-width: 320px;
+  min-width: 320px;
   transform: scale(0.3);
-  transform-origin: 0 0;
+  transform-origin: left top;
+
 
   @media screen and (min-width: 480px) {
-    transform: scale(0.5);
+    transform: scale(0.43);
   }
   @media screen and (min-width: 768px) {
     transform: scale(0.7);
     margin: 20px auto;
-
   }
   @media screen and (min-width: 1200px) {
-    transform: scale(1);
-  }
-}
+      width: 1200px;
+      margin: 20px auto;
+      transform: scale(1);
 
-/* main */
-main {
-  width: 1000px;
-  height: auto;
-  margin: 250px 0 100px 0;
+  }
 }
 
 .wrapper {
@@ -39,7 +34,6 @@ main {
   flex-direction: row-reverse;
   justify-content: left;
   position: relative;
-  margin: 0px auto;
   width: 1200px;
   background: #e2e2e2;
   box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);

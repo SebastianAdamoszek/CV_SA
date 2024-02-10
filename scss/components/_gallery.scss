@@ -9,19 +9,18 @@
 .backdrop {
   display: none;
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
+  inset: 0;
+  width: 1000%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .modal {
   display: none;
   position: fixed;
-  top: 50%;
+  top: 20%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  // transform: translate(-50%, -50%);
   padding: 20px;
   background-color: #e3dada;
   border: 8px solid #2b394d;
@@ -29,6 +28,17 @@
   text-align: center;
   width: 700px;
   height: 700px;
+
+  @media screen and (min-width: 768px) {
+    top: 30%;
+    left: 40%;
+  }
+
+  @media screen and (min-width: 1200px) {
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
 
   &__img {
     width: 400px;
@@ -77,5 +87,3 @@
     }
   }
 }
-
-
