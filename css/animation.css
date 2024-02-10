@@ -1,25 +1,17 @@
-.start-animation {
+.start-animation__body {
   background: linear-gradient(
     30deg,
     rgba(0, 151, 56, 0.8),
     rgba(23, 0, 153, 0.8)
   );
-  animation: startAnimation 120s ease-in-out;
+  animation: startAnimation 20s infinite;
 }
 
 @keyframes startAnimation {
-  0% {
-    opacity: 0;
-    transform: scale(0);
-    transform-origin: top left;
-  }
-  1.5% {
-    transform: scale(1);
-  }
-  3% {
-    opacity: 1;
-  }
   25% {
+    background: linear-gradient(to right, #ff8a00, #e52e71);
+  }
+  30% {
     background: linear-gradient(to right, #ff8a00, #e52e71);
   }
   50% {
@@ -29,6 +21,24 @@
     background: linear-gradient(to right, #228e5c, #252793);
   }
 }
+
+.start-animation__wrapper{
+  animation: startAnimationWrapper 2s ease-in-out;
+}
+@keyframes startAnimationWrapper {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+    transform-origin: top left;
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .modal-animation {
   animation: opacity 1s ease-in-out;
 }
