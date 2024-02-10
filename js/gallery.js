@@ -63,7 +63,7 @@ function animateImage() {
   const imgAnimation = document.getElementById("image");
 
   imgAnimation.style.transition = "transform .5s ease-in-out";
-  imgAnimation.style.transform = "scaleX(0.1)";
+  imgAnimation.style.transform = "scale(0.1, 0.98)";
 
   setTimeout(() => {
     imgAnimation.style.transition = "transform .5s ease-in-out";
@@ -80,7 +80,7 @@ function nextImage() {
 }
 
 function prevImage() {
-  currentIndex = (currentIndex - 1) % images.length;
+  currentIndex = (currentIndex - 1 + images.length) % images.length;
   animateImage();
   setTimeout(() => {
     showCurrentImage();

@@ -58,7 +58,8 @@
   51% {
     transform: scale(1) rotate(0);
   }
-  26%, 28% {
+  26%,
+  28% {
     transform: scaleX(0.4) rotate(0);
     transform-origin: 40% center;
   }
@@ -112,10 +113,13 @@
 }
 
 .gallery__img-animation {
-  animation: photoGallery 1s ease-in-out;
+ 
+  transform-origin: top;
+  animation: imgAnimationGallery 1s ease-in-out; 
 }
-@keyframes photoGallery {
+
+@keyframes imgAnimationGallery {
   0% {
-    transform: scaleX(0.1);
+    transform: scaleY(0); 
   }
-}
+} 
