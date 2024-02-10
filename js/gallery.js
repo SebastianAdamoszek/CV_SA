@@ -14,7 +14,36 @@ const images = [
   "https://github.com/SebastianAdamoszek/CV/blob/main/img/gallery/005.jpg?raw=true",
   "https://github.com/SebastianAdamoszek/CV/blob/main/img/gallery/006.jpg?raw=true",
 ];
+function showCurrentImage() {
+  imageElement.src = images[currentIndex];
+}
 
+function animateImage() {
+  const imgAnimation = document.getElementById("image");
+
+  imgAnimation.style.transition = "transform .5s ease-in-out";
+  imgAnimation.style.transform = "scale(0.01, 0.98)";
+  setTimeout(() => {
+    imgAnimation.style.transition = "transform .5s ease-in-out";
+    imgAnimation.style.transform = "scaleX(1)";
+  }, 500);
+}
+
+function nextImage() {
+  currentIndex = (currentIndex + 1) % images.length;
+  animateImage();
+  setTimeout(() => {
+    showCurrentImage();
+  }, 500);
+}
+
+function prevImage() {
+  currentIndex = (currentIndex - 1 + images.length) % images.length;
+  animateImage();
+  setTimeout(() => {
+    showCurrentImage();
+  }, 500);
+}
 let currentIndex = 0;
 
 const backdrop = document.querySelector(".backdrop");
@@ -26,7 +55,6 @@ const imageElement = document.getElementById("image");
 function openModal() {
   modal.classList.add("is-visible");
   backdrop.classList.add("is-visible");
-
   showCurrentImage();
   window.addEventListener("keydown", escapeKeyHandler);
   backdrop.addEventListener("click", backdropClickHandler);
@@ -53,36 +81,4 @@ function backdropClickHandler(event) {
   if (event.target.classList.contains("backdrop")) {
     closeModal();
   }
-}
-
-function showCurrentImage() {
-  imageElement.src = images[currentIndex];
-}
-
-function animateImage() {
-  const imgAnimation = document.getElementById("image");
-
-  imgAnimation.style.transition = "transform .5s ease-in-out";
-  imgAnimation.style.transform = "scale(0.1, 0.98)";
-
-  setTimeout(() => {
-    imgAnimation.style.transition = "transform .5s ease-in-out";
-    imgAnimation.style.transform = "scaleX(1)";
-  }, 500);
-}
-
-function nextImage() {
-  currentIndex = (currentIndex + 1) % images.length;
-  animateImage();
-  setTimeout(() => {
-    showCurrentImage();
-  }, 500);
-}
-
-function prevImage() {
-  currentIndex = (currentIndex - 1 + images.length) % images.length;
-  animateImage();
-  setTimeout(() => {
-    showCurrentImage();
-  }, 500);
 }
