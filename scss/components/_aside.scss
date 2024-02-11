@@ -1,6 +1,6 @@
 .aside {
     width: 370px;
-    background-color: #1e2939;
+    background-color:  var(--aside-background-color);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -10,21 +10,21 @@
       position: relative;
       margin: 165px 0px 15px 0px;
       padding: 10px;
-      border: 10px solid #ffffff;
+      border: 10px solid var(--photo-border-primary);
 
       &__img {
         position: relative;
-        border: solid 3px #fb6d3a;
+        border: solid 3px var(--photo-border-secondary);
       }
     }
 
     &__sub-title {
-      color: #ffffff;
+      color: var(--aside-font-primary);
       padding-bottom: 10px;
     }
 
     &__contact {
-      color: #ffffff;
+      color: var(--aside-font-primary);
       font-size: 14px;
       line-height: 24px;
       margin-left: 20px;
@@ -35,7 +35,7 @@
       transition: 0.2s ease-in-out;
 
       &:hover {
-        color: #fb6d3a;
+        color: var(--aside-font-secondary);
       }
     }
     &__icon-smartphone {
@@ -64,21 +64,21 @@
     &__list-style {
       width: 8px;
       height: 8px;
-      background-color: #fb6d3a;
+      background-color: var(--aside-decoration-color);
       display: inline-block;
       transform: rotate(45deg);
       margin-right: 5px;
     }
 
     &__list {
-      color: #fb6d3a;
+      color:  var(--aside-font-secondary);
       font-size: 14px;
       line-height: 26px;
       list-style: none;
       width: 250px;
     }
     &__list-item {
-      color: #ffffff;
+      color: var(--aside-font-primary);
     }
 
     .skills-dev__list {
@@ -105,7 +105,7 @@
       background-color: transparent;
       display: inline-block;
       transform: rotate(45deg);
-      border: #fb6d3a 1.5px solid;
+      border: var(--aside-decoration-color) 1.5px solid;
     }
     &__gallery-box {
       margin-top: 25px;
@@ -133,7 +133,7 @@
       bottom: 185px;
       right: 50px;
       font-weight: 900;
-      color: #fb6d3a;
+      color: var(--aside-font-secondary);
       letter-spacing: 0;
       cursor: pointer;
       transition: 0.2s ease-in-out;
@@ -144,6 +144,6 @@
     }
     &__gallery-miniature:hover ~ .aside__gallery-text,
     &__gallery-text:hover {
-      border: 2px solid #fb6d3a;
+      border: 2px solid var(--aside-decoration-color);
     }
   }

@@ -17,7 +17,7 @@
       font-weight: 700;
       font-size: 28px;
       padding: 15px 0 15px 25px;
-      color: #000000;
+      color: var(--main-font-primary);
     }
     &__list {
       list-style: none;
@@ -37,26 +37,25 @@
     &__projects-list li {
       width: 80px;
       height: 40px;
-      background-color: rgba(250, 112, 61, 1);
+      background-color: var(--button-background-color);
       border-radius: 10px;
-      border-bottom: 5px solid #2b394d;
-      border-right: 3px solid #2b394d;
+      border-bottom: 5px solid var(--button-border-color);
+      border-right: 3px solid var(--button-border-color);
       cursor: pointer;
-      color: #2b394d;
+      color: var(--button-font-primary);
       transition: 0.25s ease-in-out;
 
       &:hover {
-        background-color: rgba(250, 112, 61, 0.9);
         transform: scale(1.02);
-        color: #e2e2e2;
+        color: var(--button-font-secondary);
       }
       &:active {
-        border-bottom: 1px solid #2b394d;
-        border-right: 1px solid #2b394d;
+        border-bottom: 1px solid var(--button-border-color);
+        border-right: 1px solid var(--button-border-color);
         transform: translate(3px, 3px);
         width: 82px;
         height: 40px;
-        color: #d8d8d8;
+        color: var(--button-font-tertiary);
       }
     }
     &__projects-list--text {
@@ -74,22 +73,7 @@
       font-size: 18px;
       letter-spacing: 1.3px;
     }
-    &__list-item {
-      width: 70px;
-      height: 30px;
-      border: #595959 2px solid;
-      border-radius: 10px;
-      font-weight: 400;
-      font-size: 14px;
-      letter-spacing: 1.5px;
-      padding-top: 10px;
-      color: #595959;
-      background-color: #fb6d3a;
-      text-align: center;
-      text-transform: uppercase;
-      cursor: pointer;
-    }
-
+ 
     &__description {
       font-weight: 500;
       padding: 10px 0 10px 0;
@@ -100,14 +84,14 @@
       font-size: 22px;
     }
     &__title-color {
-      color: #fb6d3a;
+      color: var(--main-font-tertiary);
     }
 
     &__date {
       font-weight: 400;
       font-size: 14px;
       line-height: 15px;
-      color: #a8a8a8;
+      color: var(--main-font-quaternary);
       padding: 5px 5px 10px 0;
     }
   }

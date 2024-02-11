@@ -3,7 +3,7 @@
       position: absolute;
       width: 1000px;
       height: auto;
-      background-color: #2b394d;
+      background-color: var(--header-background-color);
       top: 30px;
       left: 100px;
       padding: 15px 0 15px 0;
@@ -13,7 +13,7 @@
       font-size: 16px;
       letter-spacing: 1.3px;
       padding-left: 300px;
-      color: white;
+      color: var(--header-font-tertiary);
     }
     &__person {
       display: flex;
@@ -26,18 +26,18 @@
     }
 
     &__person-first-name {
-      color: #a8a8a8;
+      color: var(--header-font-primary)
     }
 
     &__person-last-name {
-      color: #fb6d3a;
+      color: var(--header-font-secondary);
       padding: 20px 0 0 10px;
     }
     &__sub-title {
       font-weight: 400;
       font-size: 12px;
       line-height: 18px;
-      color: #d8d8d8;
+      color: var(--header-font-tertiary);
       padding: 5px 60px 25px 0;
       text-align: right;
     }
