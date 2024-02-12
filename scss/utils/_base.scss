@@ -11,12 +11,12 @@ body {
   cursor: url(../img/cursor.svg), auto;
   text-shadow: var(--body-text-shadow);
   min-width: 320px;
-  transform: scale(0.2);
+  transform: scale(0.3);
   transform-origin: left top;
 
 
   @include small {
-    transform: scale(0.43);
+    transform: scale(0.5);
   }
   @include medium {
     transform: scale(0.7);
