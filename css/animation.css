@@ -23,19 +23,18 @@
 }
 
 .wrapper__start-animation {
+  transform-origin: top left;
+
   animation: startAnimationWrapper 2s ease-in-out;
 }
 @keyframes startAnimationWrapper {
   0% {
     opacity: 0;
     transform: scale(0);
-    transform-origin: top left;
   }
-  50% {
-    transform: scale(1.1);
-  }
-  100% {
-    opacity: 1;
+  60% {
+    opacity: 0.1;
+    transform: scale(1.02);
   }
 }
 
@@ -113,13 +112,13 @@
 }
 
 .gallery__img-animation {
- 
+
   transform-origin: top;
-  animation: imgAnimationGallery 1s ease-in-out; 
+  animation: imgAnimationGallery 1s ease-in-out;
 }
 
 @keyframes imgAnimationGallery {
   0% {
-    transform: scaleY(0); 
+    transform: scaleY(0);
   }
-} 
+}
