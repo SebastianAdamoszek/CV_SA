@@ -32,7 +32,7 @@
       align-items: start;
       justify-content: start;
       gap: 5px;
-      transition: 0.2s ease-in-out;
+      transition: 250ms ease-in-out;
 
       &:hover {
         color: var(--aside-font-secondary);
@@ -118,6 +118,10 @@
     }
     &__gallery-miniature {
       cursor: pointer;
+      border: 2px solid var(--aside-background-color);
+      transition: 250ms ease-in-out;
+      &:hover {
+        box-shadow: 0px 0px 12px 1px var(--photo-border-primary);      }
     }
 
     &__gallery-list--style {
