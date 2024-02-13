@@ -9,14 +9,21 @@
 .backdrop {
   display: none;
   position: fixed;
-  inset: 0;
-  width: 400vw;
-  height: 400vh;
-  background-color: rgba(0, 0, 0, 0.6);
-
+  top: 0;
+  left: 0;
+  width: 500vw;
+  height: 100vh;
+  margin-left: -280px;
+  background: rgba(0, 0, 0, 0.5);
+  @include small {
+    margin-left: -350px;
+  }
+  @include medium {
+  }
   @include large {
-    inset: 0;
-    margin-left: -1960px;
+    width: 500%;
+    height: 105%;
+    margin-left: -2000px;
   }
 }
 
