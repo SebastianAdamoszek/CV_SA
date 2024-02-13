@@ -1,7 +1,7 @@
 .body__start-animation {
   background: linear-gradient(
     to left,
-    rgba(0, 151, 56, 0.8),
+    rgba(22, 105, 188, 0.8),
     rgba(23, 0, 153, 0.8)
   );
   animation: startAnimationBody 20s infinite;
@@ -9,13 +9,13 @@
 
 @keyframes startAnimationBody {
   25% {
-    background: linear-gradient(to left, rgb(255, 138, 0), rgb(229, 46, 113))
+    background: linear-gradient(to left, rgb(255, 94, 0), rgb(241, 166, 53))
   }
   50% {
     background: linear-gradient(to left, rgb(30, 144, 255), rgb(0, 206, 209));
   }
   75% {
-    background: linear-gradient(to left, rgb(34, 142, 92), rgb(37, 39, 147));
+    background: linear-gradient(to left, rgb(34, 126, 142), rgb(15, 147, 30));
   }
 }
 
