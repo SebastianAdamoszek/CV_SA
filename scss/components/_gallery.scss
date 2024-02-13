@@ -11,18 +11,20 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 500vw;
-  height: 100vh;
+  width: 550%;
+  height: 105%;
   margin-left: -280px;
   background: rgba(0, 0, 0, 0.5);
   @include small {
-    margin-left: -350px;
+    width: 410%;
+    margin-left: -370px;
   }
   @include medium {
+    width: 250%;
+    margin-left: -350px;
   }
   @include large {
     width: 500%;
-    height: 105%;
     margin-left: -2000px;
   }
 }
