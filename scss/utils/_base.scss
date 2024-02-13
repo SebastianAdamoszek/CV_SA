@@ -11,7 +11,7 @@ body {
   cursor: url(../img/cursor.svg), auto;
   text-shadow: var(--body-text-shadow);
   min-width: 320px;
-  transform: scale(0.25);
+  transform: scale(0.27);
   transform-origin: left top;
 
   @include small {
