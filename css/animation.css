@@ -9,13 +9,13 @@
 
 @keyframes startAnimationBody {
   25% {
-    background: linear-gradient(to left, #ff8a00, #e52e71)
+    background: linear-gradient(to left, rgb(255, 138, 0), rgb(229, 46, 113))
   }
   50% {
-    background: linear-gradient(to left, #1e90ff, #00ced1);
+    background: linear-gradient(to left, rgb(30, 144, 255), rgb(0, 206, 209));
   }
   75% {
-    background: linear-gradient(to left, #228e5c, #252793);
+    background: linear-gradient(to left, rgb(34, 142, 92), rgb(37, 39, 147));
   }
 }
 
