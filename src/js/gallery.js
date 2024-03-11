@@ -1,10 +1,10 @@
 const images = [
-  'https://github.com/SebastianAdamoszek/Curriculum-Vitae/blob/main/src/img/gallery/001.jpg?raw=true',
-  'https://github.com/SebastianAdamoszek/Curriculum-Vitae/blob/main/src/img/gallery/002.jpg?raw=true',
-  'https://github.com/SebastianAdamoszek/Curriculum-Vitae/blob/main/src/img/gallery/003.jpg?raw=true',
-  'https://github.com/SebastianAdamoszek/Curriculum-Vitae/blob/main/src/img/gallery/004.jpg?raw=true',
-  'https://github.com/SebastianAdamoszek/Curriculum-Vitae/blob/main/src/img/gallery/005.jpg?raw=true',
-  'https://github.com/SebastianAdamoszek/Curriculum-Vitae/blob/main/src/img/gallery/006.jpg?raw=true',
+  'https://github.com/SebastianAdamoszek/CV/blob/main/src/img/gallery/001.jpg?raw=true',
+  'https://github.com/SebastianAdamoszek/CV/blob/main/src/img/gallery/002.jpg?raw=true',
+  'https://github.com/SebastianAdamoszek/CV/blob/main/src/img/gallery/003.jpg?raw=true',
+  'https://github.com/SebastianAdamoszek/CV/blob/main/src/img/gallery/004.jpg?raw=true',
+  'https://github.com/SebastianAdamoszek/CV/blob/main/src/img/gallery/005.jpg?raw=true',
+  'https://github.com/SebastianAdamoszek/CV/blob/main/src/img/gallery/006.jpg?raw=true',
 ];
 
 document.addEventListener('DOMContentLoaded', function () {
