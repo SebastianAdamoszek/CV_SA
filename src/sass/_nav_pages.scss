@@ -1,0 +1,30 @@
+.pages {
+  margin-left: 80px;
+  background-color: var(--nav-background-color);
+  border-radius: 7px;
+
+  &__list {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 50px;
+    position: relative;
+    padding: 10px 20px;
+    &__element {
+      border: 2px solid var(--nav-border-primary);
+      border-radius: 7px;
+      color: var(--nav-font-primary);
+      transition: 250ms ease-in-out;
+    }
+    &__element:hover {
+      border: 2px solid var(--nav-border-secondary);
+      background-color: var(--nav-background-color-hover);
+      box-shadow: 0px 0px 12px 1px var(--nav-border-primary);
+      color: var(--nav-font-secondary);
+    }
+  }
+  &__list-text {
+    font-size: 18px;
+    padding: 5px;
+  }
+}
