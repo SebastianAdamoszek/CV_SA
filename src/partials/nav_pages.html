@@ -1,15 +1,35 @@
 <nav class="pages">
   <ul class="pages__list">
-    <li class="pages__list__element"><p class="pages__list-text">O mnie</p></li>
-    <li class="pages__list__element">
-      <p class="pages__list-text">List motywacyjny</p>
+    <li
+      class="pages__list__element"
+      onclick="togglePartial('about'); 
+               showHide('letter', 'hide')"
+    >
+      <p class="pages__list-text">O mnie</p>
     </li>
-    <li class="pages__list__element" onclick="window.open
-    ('https://www.linkedin.com/login/pl','_blank')">
+    <li class="pages__list__element">
+      <p
+        class="pages__list-text"
+        onclick="togglePartial('letter'); 
+                 showHide('repositories', 'hide'); 
+                 showHide('career', 'hide'); 
+                 showHide('education', 'hide')"
+      >
+        List motywacyjny
+      </p>
+    </li>
+    <li
+      class="pages__list__element"
+      onclick="window.open
+    ('https://www.linkedin.com/login/pl','_blank')"
+    >
       <p class="pages__list-text">Linkedin</p>
     </li>
-    <li class="pages__list__element" onclick="window.open
-    ('https://github.com/SebastianAdamoszek/','_blank')">
+    <li
+      class="pages__list__element"
+      onclick="window.open
+    ('https://github.com/SebastianAdamoszek/','_blank')"
+    >
       <p class="pages__list-text">Github</p>
     </li>
   </ul>
