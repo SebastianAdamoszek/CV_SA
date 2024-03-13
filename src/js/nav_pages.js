@@ -31,3 +31,14 @@ function showHide(id, action) {
     element.classList.remove('hide');
   }
 }
+
+function toggleActiveShadow(id) {
+  var clickedElement = document.getElementById(id);
+  var otherElementId = id === 'clickAbout' ? 'clickLetter' : 'clickAbout';
+
+  var otherElement = document.getElementById(otherElementId);
+
+  clickedElement.classList.add('activeShadow');
+
+  otherElement.classList.remove('activeShadow');
+}
