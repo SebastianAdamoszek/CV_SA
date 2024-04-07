@@ -1,4 +1,7 @@
 const images = [
+  'https://github.com/SebastianAdamoszek/CV/blob/main/src/img/gallery/certifikatGOITs1.jpg?raw=true',
+  'https://github.com/SebastianAdamoszek/CV/blob/main/src/img/gallery/certifikatGOITs2.jpg?raw=true',
+  'https://github.com/SebastianAdamoszek/CV/blob/main/src/img/gallery/certifikatGOITs3.jpg?raw=true',
   'https://github.com/SebastianAdamoszek/CV/blob/main/src/img/gallery/001.jpg?raw=true',
   'https://github.com/SebastianAdamoszek/CV/blob/main/src/img/gallery/002.jpg?raw=true',
   'https://github.com/SebastianAdamoszek/CV/blob/main/src/img/gallery/003.jpg?raw=true',
