@@ -1,0 +1,122 @@
+.button-up {
+  position: fixed;
+  left: 101%;
+  bottom: 30%;
+  width: 100px;
+  height: 100px;
+  background-color: rgba(201, 201, 201, 0.3);
+  border-radius: 50%;
+  border: 3px solid rgba(43, 43, 43, 0.5);
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+
+  animation: buttonUpShow 0.5s ease-in-out;
+
+  &:hover {
+    border: 3px solid rgba(43, 43, 43, 1);
+    box-shadow: 0px 0px 20px 2px rgb(255, 255, 255);
+  }
+}
+
+@keyframes buttonUpShow {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.slash {
+  width: 40px;
+  height: 3px;
+  background-color: rgba(43, 43, 43, 0.8);
+  transform: rotate(-45deg);
+  position: relative;
+  top: 50px;
+  left: 15px;
+  border-radius: 2px;
+
+  animation: arrowAnimation 4s infinite;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 19;
+    left: 29;
+    box-shadow: 0px 10px 0px 0px rgba(43, 43, 43, 0.8);
+    transform: rotate(90deg);
+    border-radius: 2px;
+    animation: arrowAnimationR 4s infinite;
+  }
+}
+
+@keyframes arrowAnimation {
+  50% {
+    transform: translateY(10px) rotate(-45deg);
+    background-color: rgba(43, 43, 43, 0.3);
+  }
+}
+@keyframes arrowAnimationR {
+  50% {
+    box-shadow: 0px 10px 0px 0px rgba(43, 43, 43, 0.3);
+  }
+}
+
+.slash-shadow {
+  width: 40px;
+  height: 3px;
+  background-color: rgba(43, 43, 43, 1);
+  transform: rotate(-45deg) scale(1);
+  position: relative;
+  top: 48px;
+  left: 15px;
+  border-radius: 2px;
+
+  animation: arrowAnimationShadow 4s infinite;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 19;
+    left: 29;
+    box-shadow: 0px 10px 0px 0px rgba(43, 43, 43, 1);
+    transform: rotate(90deg);
+    border-radius: 2px;
+    animation: arrowAnimationShadowR 4s infinite;
+  }
+}
+
+@keyframes arrowAnimationShadow {
+  50% {
+    transform: translateY(-20px) rotate(-45deg);
+    background-color: rgba(43, 43, 43, 0.6);
+  }
+  55% {
+    background-color: rgba(43, 43, 43, 0.4);
+  }
+  60% {
+    background-color: rgba(43, 43, 43, 0);
+  }
+  100% {
+    background-color: rgba(43, 43, 43, 0);
+  }
+}
+@keyframes arrowAnimationShadowR {
+  50% {
+    box-shadow: 0px 10px 0px 0px rgba(43, 43, 43, 0.6);
+  }
+  55% {
+    box-shadow: 0px 10px 0px 0px rgba(43, 43, 43, 0.4);
+  }
+  60% {
+    box-shadow: 0px 10px 0px 0px rgba(43, 43, 43, 0);
+  }
+  100% {
+    box-shadow: 0px 10px 0px 0px rgba(43, 43, 43, 0);
+  }
+}
