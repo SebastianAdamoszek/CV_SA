@@ -1,4 +1,7 @@
 .button-up {
+    @media screen and (max-width: 1199.99px) {
+        display: none;
+    }
   position: fixed;
   left: 101%;
   bottom: 30%;
