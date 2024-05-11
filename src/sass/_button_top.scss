@@ -1,4 +1,4 @@
-@media screen and (min-width: 1200px) {
+@include large {
   .button-up {
     position: fixed;
     left: 101%;
