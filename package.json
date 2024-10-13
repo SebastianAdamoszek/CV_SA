@@ -1,8 +1,8 @@
 {
-  "name": "cv-sebastian-adamoszek",
+  "name": "cv_de-sebastian-adamoszek",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://github.com/SebastianAdamoszek/CV.git",
+  "homepage": "https://github.com/SebastianAdamoszek/CV_DE.git",
   "scripts": {
     "start": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url ."
